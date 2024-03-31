@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider Example</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<style>
+    img{
+        height: 50vh;
+        width: 70vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
+</head>
+<body>
+  <div class="slider">
+    <div><img src="https://th.bing.com/th/id/OIP.jyebWp7N9ADZ6EoGWNPpRAHaE8?rs=1&pid=ImgDetMain "alt="Image 1"></div>
+    <div><img src="https://th.bing.com/th/id/OIP.pi90ajUKZDYfm2Hm3PSFOgHaE8?w=720&h=480&rs=1&pid=ImgDetMain" alt="Image 2"></div>
+    <div><img src="https://th.bing.com/th/id/OIP.NphmXcupyDUroOCozwmhPwHaFJ?pid=ImgDet&w=182&h=126&c=7&dpr=1.3" alt="Image 3"></div>
+<!-- <button>click</button>   -->
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.slider').slick();
+    });
+  </script>
+</body>
+</html>
