@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slideshow</title>
+    <style>
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+
+      .mySlides {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="/registration20form20light.jpg" style="width: 100%" />
+      </div>
+      <div class="mySlides fade">
+        <img src="/free-images.jpg" style="width: 100%" />
+      </div>
+      <div class="mySlides fade">
+        <img src="/download.jpg" style="width: 100%" />
+      </div>
+    </div>
+
+    <script>
+      let slideIndex = 0;
+
+      function showSlides() {
+        let slides = document.getElementsByClassName("mySlides");
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000);
+      }
+
+      showSlides();
+    </script>
+  </body>
+</html>
